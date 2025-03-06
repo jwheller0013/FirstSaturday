@@ -63,9 +63,14 @@ public class WriteLoops {
     public int countDown() {
         int w = 0;
 
+        for  (int x=100; x > 0; x--) {
+            System.out.println(x);
+            w = w + 1;
+        }
+
         // Write a FOR loop that counts down from 100 to 0.
         // calling
-        w = w + 1;
+//        w = w + 1;
         // each time through the loop
         
         return w;
@@ -74,9 +79,14 @@ public class WriteLoops {
     public int byTwoTo32() {
         int w = 0;
 
+        for  (int i=0; i < 33; i+=2) {
+            System.out.println(i);
+            w = w + 1;
+        }
+
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
-        w = w + 1;
+//        w = w + 1;
         // each time through the loop
         return w;
     }
