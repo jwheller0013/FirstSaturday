@@ -175,12 +175,16 @@ public class WriteLoops {
         int w = 0;
 
         // you need to use a .equals for two Strings.
+        while (!gpsCurrentLocation().equals("Home")) {
+            driveSomeMore();
+            w = w + 1;
+        }
 
             // calling
-            w = w + 1;
-            // each time through the inner loop
-        
 
+            // each time through the inner loop
+
+        System.out.println("Honey, I'm Home!");
             return w;
     }
 
