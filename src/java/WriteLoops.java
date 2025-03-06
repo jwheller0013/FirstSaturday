@@ -205,13 +205,9 @@ public class WriteLoops {
             currentScore = gameNextScore();
             w = w + 1;
         }
-
         // do your while loop here
- 
             // calling
-
             // each time through the inner loop
-        
         return w>=3;
         // >= 3;
     }
@@ -225,9 +221,15 @@ public class WriteLoops {
         int runningScore = 0;
 
         // do your while loop here
+        do {
+            runningScore = runningScore + currentScore;
+            currentScore = gameNextScore();
+            w = w + 1;
+        }
+        while (gameNextScore() < highestScore);
 
             // calling
-            w = w + 1;
+//            w = w + 1;
             // each time through the inner loop
 
         return w >= 3;
