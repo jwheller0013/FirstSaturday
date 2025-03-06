@@ -49,7 +49,7 @@ public class WriteLoops {
         int x = 21;
 
         // Write a FOR loop that makes 10 iterations, start at 21.
-        for  (int i=1; i < 12; i++) {
+        for  (int i=1; i <= 11; i++) {
             x++;
             w = w + 1;
         }
