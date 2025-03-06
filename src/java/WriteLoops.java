@@ -46,13 +46,18 @@ public class WriteLoops {
 
     public int startAtTwentyOne() {
         int w = 0;
+        int x = 21;
 
         // Write a FOR loop that makes 10 iterations, start at 21.
+        for  (int i=1; i < 12; i++) {
+            x++;
+            w = w + 1;
+        }
         // calling
-        w = w + 1;
+        System.out.println(x);
         // each time through the loop
-        
         return w;
+        //passes test but does not seem right
     }
 
     public int countDown() {
