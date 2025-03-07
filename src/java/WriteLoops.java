@@ -385,10 +385,14 @@ public class WriteLoops {
     public int tallyVote1() {
         int w = 0;
         int numberOfVotes = voteTallies.length;
+        for (int i=0; i <= numberOfVotes; i++) {
+            System.out.println(voteTallies[i]);
+            w = w + 1;
+        }
 
  
             // calling
-            w = w + 1;
+//            w = w + 1;
             // each time through the inner loop
         
         return w;
@@ -400,10 +404,15 @@ public class WriteLoops {
     public int tallyVote2() {
         int w = 0;
         int numberOfVotes = voteTallies.length;
-
+        int idx = 0;
+        while (idx <= numberOfVotes) {
+            System.out.println(voteTallies[idx]);
+            idx++;
+            w = w + 1;
+        }
 
             // calling
-            w = w + 1;
+//            w = w + 1;
             // each time through the inner loop
         
         return w;
