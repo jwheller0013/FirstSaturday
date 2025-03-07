@@ -359,9 +359,19 @@ public class WriteLoops {
         boolean onTime = true;
 
         // ADD YOUR CODE here.
+        boolean yardNeedsMowed = true;
+
+        while (isSummer()) {
+            if (yardNeedsMowed) {
+                yellAtJuniorToMowLawn();
+                w = w + 1;
+            }
+        }
+        sendJuniorBackToSchool();
+        // unsure about argument that decribes day "end of summer"?
  
             // be sure to call
-            w = w + 1;
+
             // each time inside the loop
         
         return w;
