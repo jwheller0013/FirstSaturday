@@ -328,7 +328,7 @@ public class WriteLoops {
     public int rewriteFooAsWhile() {
         int w = 0;
         int sumOfThrees = 0;
-        int i = 0
+        int i = 0;
 
         while (i <=threes_array.length) {
             int x = threes_array[i];
@@ -367,13 +367,13 @@ public class WriteLoops {
                 w = w + 1;
             }
         }
-        sendJuniorBackToSchool();
+//        sendJuniorBackToSchool();
         // unsure about argument that decribes day "end of summer"?
- 
+
             // be sure to call
 
             // each time inside the loop
-        
+
         return w;
     }
 
