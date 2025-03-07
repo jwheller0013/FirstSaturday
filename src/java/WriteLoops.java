@@ -242,10 +242,17 @@ public class WriteLoops {
     public int checkServerStatus() {
         int w = 0;
         String adminPhoneNumber = "+1 202 456 1111";
-        
+        while (serverIsRunning()) {
+            waitFor(5);
+                w = w + 1;
+            }
+        if (!serverIsRunning()) {
+            sendEmergencyText("Help!", adminPhoneNumber);
+            tryServerRestart("Help!", adminPhoneNumber);
+        }
 
         // calling
-        w = w + 1;
+//        w = w + 1;
         // each time through the inner loop
         
         return w;
@@ -256,10 +263,15 @@ public class WriteLoops {
     // and if it is, add 7 to “i”
     public int loop50by7() {
         int w = 0;
+        int i = 0;
+        while (i < 50) {
+            i= i +7;
+            w = w + 1;
+        }
 
 
             // calling
-            w = w + 1;
+//            w = w + 1;
             // each time through the inner loop
         
         return w;
