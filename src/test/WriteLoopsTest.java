@@ -131,4 +131,15 @@ public class WriteLoopsTest
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(8, writeLoo1.loop50by7());
     }
+
+//@Test
+//public void foo()
+//{
+//    WriteLoops writeLoo1 = new WriteLoops();
+//    assertEquals("The Sum is 84" n\ 7, writeLoo1.foo());
+//}
+//    Unsure how to test the multiple lines of text it would print
+
+
+
 }
