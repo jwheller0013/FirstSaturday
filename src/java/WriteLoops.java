@@ -306,9 +306,15 @@ public class WriteLoops {
         int w = 0;
         int sumOfThrees = 0;
 
+        for (int i = 0; i < threes_array.length; i++) {
+            int x = threes_array[i];
+            sumOfThrees = sumOfThrees + x;
+            w = w + 1;
+        }
+
  
             // calling
-            w = w + 1;
+//            w = w + 1;
             // each time through the inner loop
         
         System.out.print("The Sum is ");
